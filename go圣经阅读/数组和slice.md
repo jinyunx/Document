@@ -30,3 +30,4 @@ fmt.Println(a) // "[5 4 3 2 1 0]"
 make([]T, len)
 make([]T, len, cap) // same as make([]T, cap)[:len]
 ```
+6.append函数使用时，当slice底层数组没有足够空间时，会重新开辟一个足够大的空间（一般是原空间的两倍），然后把老的数据copy过去，再添加新的数据。由于append是值传递，所以slice header的修改不会体现在原slice上，所以一般这样使用：a=append(a,b)
