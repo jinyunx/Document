@@ -1,0 +1,4 @@
+https://github.com/pion/logging.git
+
+1.主要是定义了一个scoped log，scoped可以看做是模块的含义，可以按照scope进行定制输出log的不同level，例如你只想调试某个模块时，则只要在环境变量设置这个模块的log level，这样就不用被其他模块的日志影响
+2.可以定制整体的level，scoped level，输出的writer

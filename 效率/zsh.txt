@@ -1,0 +1,8 @@
+1. 一般都默认安装了zsh指令，如果没安装则
+brew install zsh
+
+2. 安装oh my zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+3. 主体设置，默认够用了
+https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
