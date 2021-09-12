@@ -1,0 +1,4 @@
+gomod 的工作模式：
+1. cd workdir
+2. git clone github.com/.../...
+3. go mod tidy
