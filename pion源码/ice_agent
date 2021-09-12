@@ -1,0 +1,4 @@
+目前对agent的理解
+1. agent提供了一系列api来维护candidates
+2. 维护了一个chanTask   chan task，让所有提交给agent的任务都会顺序执行，访问candidate不会并发
+3. 启动了一个taskloop，检测chan task有任务，有任务则顺序执行
