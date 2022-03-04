@@ -1,0 +1,6 @@
+select from where order by limit 顺序不能变
+<> 与 != 同等
+between和is null比较特殊
+between是[]
+null 数据在等于或不等于都不会返回，like搜索也不会返回
+order by默认顺序是增序（ASC）
