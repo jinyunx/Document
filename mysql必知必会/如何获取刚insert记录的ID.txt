@@ -1,0 +1,7 @@
+insert into user (username,password) VALUES ('zyl','123');   
+//获取刚插入的自增长id的值
+select last_insert_id(); 
+
+以上操作是连接安全的，即确保单并发单连接时是安全的
+https://www.cnblogs.com/fnlingnzb-learner/p/8116737.html
+
