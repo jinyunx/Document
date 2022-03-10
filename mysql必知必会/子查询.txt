@@ -1,0 +1,5 @@
+1.子查询出现在两个地方
+a)一个是where子句，常用in来连接
+    select cust_id from orders where order_num in (select order_num from orderitems where prod_id = 'INT2');
+b)第二个是在计算字段，输出每个字段时用子查询计算出最终字段
+    select cust_name, cust_state, (select count(*) from orders where orders.cust_id = customers.cust_id) AS orders from customers order by cust_name;
