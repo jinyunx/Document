@@ -3,3 +3,6 @@ git update-index --assume-unchanged path/to/file
 
 //恢复跟踪
 git update-index --no-assume-unchanged path/to/file
+
+//查看哪些文件被忽略
+git ls-files -v | grep '^[[:lower:]]'
