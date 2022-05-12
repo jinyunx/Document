@@ -1,0 +1,5 @@
+//这里忽略path/to/file文件
+git update-index --assume-unchanged path/to/file  
+
+//恢复跟踪
+git update-index --no-assume-unchanged path/to/file
