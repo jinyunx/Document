@@ -1,0 +1,15 @@
+
+https://www.zhihu.com/question/60426831
+
+一个文件夹下只能有一个package.  
+import后面的其实是GOPATH开始的相对目录路径，包括最后一段。
+但由于一个目录下只能有一个package，所以import一个路径就等于是import了这个路径下的包。
+注意，这里指的是“直接包含”的go文件。如果有子目录，那么子目录和其父目录是完全两个包。
+比如你实现了一个计算器package，名叫calc，位于calc目录下；但又想给别人一个使用范例，于是在calc下可以建个example子目录（calc/example/），这个子目录里有个example.go（calc/example/example.go）。此时，example.go可以是main包，里面还可以有个main函数。
+
+一个package的文件不能在多个文件夹下。
+如果多个文件夹下有重名的package，它们其实是彼此无关的package。如果一个go文件需要同时使用不同目录下的同名package，需要在import这些目录时为每个目录指定一个package的别名。
+
+包名自然可以和文件夹名不一样，毕竟一个是导入路径，一个是包名
+
+但不建议这么做，这样容易造成调用这个包的人，无法快速知道这个包的名称是什么
