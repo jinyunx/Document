@@ -1,3 +1,4 @@
 git config lfs.fetchinclude 'images/**'
+git lfs pull
 
 参考https://zzz.buzz/zh/2016/04/19/the-guide-to-git-lfs/
