@@ -1,0 +1,11 @@
+服务端安装v2ray
+教程可以看 https://www.techxiaofei.com/post/vpn/v2ray/，执行两句命令就搞定了，实在是简单
+sudo su
+bash <(curl -s -L https://git.io/v2ray.sh)
+
+树莓派安装v2ray
+bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
+
+树莓派安装v2rayA
+下载 https://github.com/v2rayA/v2rayA/releases v2raya_linux_armv6_2.2.5
+因为是go的二进制，所以可以直接运行。可以用file查看文件格式
